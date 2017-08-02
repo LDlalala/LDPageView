@@ -1,0 +1,45 @@
+//
+//  LDPageView.swift
+//  LDPageView
+//
+//  Created by 李丹 on 17/8/2.
+//  Copyright © 2017年 LD. All rights reserved.
+//
+
+import UIKit
+
+class LDPageView: UIView {
+
+    private var titles : [String]
+    private var childVcs : [UIViewController]
+    private var parent : UIViewController
+    private var style : LDPageStyle
+    
+    init(frame : CGRect ,titles : [String] ,style : LDPageStyle , childVcs : [UIViewController], parent : UIViewController) {
+        // 在super前初始化变量
+        self.titles = titles
+        self.childVcs = childVcs;
+        self.parent = parent
+        self.style = style
+        
+        super.init(frame: frame)
+        
+        setupUI()
+    }
+    
+    private func setupUI() {
+        // 添加标题视图
+        let titleFrame = CGRect(x: 0, y: 0, width: self.bounds.width, height: style.titleHeight)
+        let titleView = LDTitleView(titles: titles, frame: titleFrame, style: style)
+        addSubview(titleView)
+        
+        // 添加内容视图
+        let contentFrame = CGRect(x: 0, y: style.titleHeight, width: self.bounds.width, height: self.bounds.height - style.titleHeight)
+        let contentView = LDContentView(frame: <#T##CGRect#>)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+}
