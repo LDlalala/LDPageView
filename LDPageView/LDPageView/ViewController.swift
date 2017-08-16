@@ -12,17 +12,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        automaticallyAdjustsScrollViewInsets = false
         setupUI()
         
     }
 
     private func setupUI(){
-        //  let titles = ["推荐", "手游", "娱乐", "游戏", "趣玩"]
-        let titles = ["推荐", "手游玩法大全", "娱乐手", "游戏游戏", "趣玩", "游戏游戏", "趣玩"]
+       // let titles = ["推荐", "手游", "娱乐", "游戏", "趣玩"]
+       let titles = ["推荐", "手游玩法大全", "娱乐手", "游戏游戏", "趣玩", "游戏游戏", "趣玩"]
         
         let style = LDPageStyle()
         style.titleHeight = 44
+        style.isScrollEnadle = true
         
         let pageFrame = CGRect(x: 0, y: 64, width: view.bounds.width, height: view.bounds.height - 64)
         

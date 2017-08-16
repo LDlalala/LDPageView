@@ -19,6 +19,8 @@
 		D66927421F31D24F0064D232 /* LDPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66927411F31D24F0064D232 /* LDPageView.swift */; };
 		D66927441F31D2720064D232 /* LDPageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66927431F31D2720064D232 /* LDPageStyle.swift */; };
 		D66927461F31D9110064D232 /* UIColor-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66927451F31D9110064D232 /* UIColor-extension.swift */; };
+		D66BE7EE1F43FA5900572A8F /* LDPageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BE7ED1F43FA5900572A8F /* LDPageCollectionView.swift */; };
+		D66BE7F01F43FA6200572A8F /* LDPageCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BE7EF1F43FA6200572A8F /* LDPageCollectionViewLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		D66927411F31D24F0064D232 /* LDPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDPageView.swift; sourceTree = "<group>"; };
 		D66927431F31D2720064D232 /* LDPageStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDPageStyle.swift; sourceTree = "<group>"; };
 		D66927451F31D9110064D232 /* UIColor-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-extension.swift"; sourceTree = "<group>"; };
+		D66BE7ED1F43FA5900572A8F /* LDPageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDPageCollectionView.swift; sourceTree = "<group>"; };
+		D66BE7EF1F43FA6200572A8F /* LDPageCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDPageCollectionViewLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,8 @@
 				D669273D1F31C9020064D232 /* LDTitleView.swift */,
 				D669273F1F31C9100064D232 /* LDContentView.swift */,
 				D66927431F31D2720064D232 /* LDPageStyle.swift */,
+				D66BE7ED1F43FA5900572A8F /* LDPageCollectionView.swift */,
+				D66BE7EF1F43FA6200572A8F /* LDPageCollectionViewLayout.swift */,
 			);
 			path = LDPageView;
 			sourceTree = "<group>";
@@ -283,9 +289,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D66927441F31D2720064D232 /* LDPageStyle.swift in Sources */,
+				D66BE7EE1F43FA5900572A8F /* LDPageCollectionView.swift in Sources */,
 				D66927461F31D9110064D232 /* UIColor-extension.swift in Sources */,
 				D66927401F31C9100064D232 /* LDContentView.swift in Sources */,
 				D669273E1F31C9020064D232 /* LDTitleView.swift in Sources */,
+				D66BE7F01F43FA6200572A8F /* LDPageCollectionViewLayout.swift in Sources */,
 				D66927111F31C8CA0064D232 /* ViewController.swift in Sources */,
 				D66927421F31D24F0064D232 /* LDPageView.swift in Sources */,
 				D669270F1F31C8CA0064D232 /* AppDelegate.swift in Sources */,
@@ -531,6 +539,7 @@
 				D66927351F31C8CA0064D232 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D66927361F31C8CA0064D232 /* Build configuration list for PBXNativeTarget "LDPageViewTests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +548,7 @@
 				D66927381F31C8CA0064D232 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D66927391F31C8CA0064D232 /* Build configuration list for PBXNativeTarget "LDPageViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +557,7 @@
 				D669273B1F31C8CA0064D232 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

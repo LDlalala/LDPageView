@@ -11,9 +11,9 @@ import UIKit
 class LDPageStyle {
     
     var titleHeight : CGFloat = 44;
-    var normalColor : UIColor = UIColor.black
-    var selectColor : UIColor = UIColor.red
+    var normalColor : UIColor = UIColor(r: 255, g: 255, b: 255)
+    var selectColor : UIColor = UIColor(r: 255, g: 127, b: 0)
     var font : UIFont = UIFont.systemFont(ofSize: 15)
-    var margin : CGFloat = 10
+    var margin : CGFloat = 20
     var isScrollEnadle : Bool = false
 }
